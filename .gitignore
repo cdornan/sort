@@ -1,4 +1,6 @@
 stack.yaml
+.hub
+cabal.config
 
 dist
 dist-*

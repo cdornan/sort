@@ -1,0 +1,90 @@
+Name:                   sort-benchmarks
+Version:                0.1.0.0
+Synopsis:               Haskell sorting toolkit benchmarks
+Description:            A library of general-purpose sorting utilities.
+Homepage:               https://github.com/cdornan/sort
+Author:                 Chris Dornan
+License:                BSD3
+license-file:           LICENSE
+Maintainer:             Chris Dornan <chris@chrisdornan.com>
+Copyright:              Chris Dornan 2017
+Category:               Text
+Build-type:             Simple
+Stability:              Experimental
+bug-reports:            https://github.com/cdornan/sort/issues
+
+Cabal-Version:          >= 1.10
+
+Source-Repository head
+    type:               git
+    location:           https://github.com/cdornan/sort.git
+
+Executable update-sort-benchmarks
+    Hs-Source-Dirs:     ../src src
+
+    Main-Is:            update-sort-benchmarks.hs
+
+    Other-Modules:
+      Data.Sort
+      SortBenchmarks
+
+    Default-Language:   Haskell2010
+
+    GHC-Options:
+      -Wall
+      -fwarn-tabs
+      -Werror
+
+    Build-depends:
+        base            >= 4         && < 5
+      , criterion       >= 1.1.0.0   && < 1.2
+      , mwc-random      >= 0.13.3.2  && < 0.14
+      , vector          >= 0.10.12.3 && < 0.13
+
+
+Benchmark sort-benchmarks
+    Hs-Source-Dirs:     ../src src
+    Type:               exitcode-stdio-1.0
+
+    Main-Is:            sort-benchmarks.hs
+
+    Other-Modules:
+      Data.Sort
+      SortBenchmarks
+
+    Default-Language:   Haskell2010
+
+    GHC-Options:
+      -Wall
+      -fwarn-tabs
+      -Werror
+
+    Build-depends:
+        base            >= 4         && < 5
+      , criterion       >= 1.1.0.0   && < 1.2
+      , mwc-random      >= 0.13.3.2  && < 0.14
+      , vector          >= 0.10.12.3 && < 0.13
+
+
+Test-Suite sort-tests
+    Hs-Source-Dirs:     ../src src
+    type:               exitcode-stdio-1.0
+
+    Main-Is:            sort-tests.hs
+
+    Other-Modules:
+      Data.Sort
+
+    Default-Language:   Haskell2010
+
+    GHC-Options:
+      -Wall
+      -fwarn-tabs
+      -Werror
+
+    Build-depends:
+        base            >= 4         && < 5
+      , mwc-random      >= 0.13.3.2  && < 0.14
+      , tasty           >= 0.10.1.2  && < 0.12
+      , tasty-hunit     >= 0.9.2     && < 0.10
+      , vector          >= 0.10.12.3 && < 0.13
