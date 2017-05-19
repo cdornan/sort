@@ -1,0 +1,9 @@
+-*-change-log-*-
+
+0.1.0.0 Chris Dornan <chris.dornan@irisconnect.co.uk> 2017-05-19
+  * Initial API
+  * Basic benchmark added
+  * Simple test suite added
+
+0.0.0.1 Chris Dornan <chris.dornan@irisconnect.co.uk> 2017-05-05
+	* First public release

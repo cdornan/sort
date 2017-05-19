@@ -16,6 +16,7 @@ import           System.Random.MWC
 sortBenchmarks :: Config -> IO ()
 sortBenchmarks cfg = do
 
+  -- | generate 1000 psuedo-random numbers in r1k
   gen <- initialize $ V.singleton 42
   r1k <- V.toList `fmap` uniformVector gen 1000 :: IO [Int]
 
