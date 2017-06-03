@@ -10,7 +10,7 @@ Maintainer:             Chris Dornan <chris@chrisdornan.com>
 Copyright:              Chris Dornan 2017
 Category:               Text
 Build-type:             Simple
-Stability:              RFC
+Stability:              Stable
 bug-reports:            https://github.com/cdornan/sort/issues
 
 Extra-Source-Files:
