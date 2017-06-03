@@ -20,3 +20,4 @@ The criterion reports for each released version (from 0.1.0.0) are as
 follows.
 
   * [sort-0.1.0.0 benchmarks](http://regex.uk/sort/sort-benchmarks-0.1.0.0.html)
+  * [sort-1.0.0.0 benchmarks](http://regex.uk/sort/sort-benchmarks-1.0.0.0.html)
