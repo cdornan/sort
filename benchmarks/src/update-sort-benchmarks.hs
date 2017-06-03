@@ -9,5 +9,5 @@ import           SortBenchmarks
 main :: IO ()
 main = sortBenchmarks
   defaultConfig
-    { reportFile = Just "../../regex-uk/sort/sort-benchmarks.html"
+    { reportFile = Just "../regex-uk/sort/sort-benchmarks.html"
     }

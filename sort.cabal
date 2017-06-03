@@ -1,5 +1,5 @@
 Name:                   sort
-Version:                0.1.0.0
+Version:                1.0.0.0
 Synopsis:               A Haskell sorting toolkit
 Description:            A library of general-purpose sorting utilities.
 Homepage:               https://github.com/cdornan/sort
